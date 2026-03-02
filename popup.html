@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Chat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      margin: 0;
+      padding: 10px;
+    }
+
+    #chatBox {
+      height: 200px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      padding: 5px;
+      margin-bottom: 10px;
+      background: #f9f9f9;
+    }
+
+    input, button {
+      padding: 5px;
+      font-size: 14px;
+    }
+
+    input {
+      width: 200px;
+    }
+
+    button {
+      width: 70px;
+      cursor: pointer;
+    }
+
+    .message {
+      margin: 3px 0;
+      padding: 3px 5px;
+      background: #e1f5fe;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <h3>Mini Chat</h3>
+  <div id="chatBox"></div>
+  <input type="text" id="msgInput" placeholder="Type message...">
+  <button id="sendBtn">Send</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
